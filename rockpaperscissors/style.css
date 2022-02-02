@@ -1,0 +1,19 @@
+body {
+	background-color: rgb(50,50,50);
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: rgb(75,75,75);
+	width: 100px;
+	aspect-ratio: 1;
+	position: relative;
+	top: 75%;
+}
+#optionsflex {
+	display: flex;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	justify-items: center;
+}
