@@ -1,0 +1,113 @@
+body {
+	font-family: "Montserrat";
+	background: rgb(50,50,50);
+	color: #efefef;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 5rem;
+	font-weight: 800;
+}
+
+#resetbutton {
+	margin: auto;
+	font-weight: 600;
+	font-size: 1rem;
+	background: rgb(75,75,75);
+	position: relative;
+	top: -40;
+	box-shadow: 0px 0px 10px rgb(20,20,20);
+	padding: 20;
+	border-radius: 10%;
+	cursor: pointer;
+	transition: transform 0.25s ease-in, background 0.25s ease-in;
+}
+#resetbutton:hover {
+	transform: scale(110%);
+	background-color: rgb(100,100,100);
+}
+
+.centerallflexbox {
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+#titleflexcontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#titlediv {
+	margin: auto;
+}
+
+/*End of "Header"*/
+
+#boardflex {
+	display: flex;
+	gap: 20px;
+	position: relative;
+	top: 0;
+	margin: auto;
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	min-width: 500;
+	max-width: 600;
+	font-weight: 400;
+}
+
+.box {
+	width: 150px;
+	border: 0px;
+	aspect-ratio: 1;
+	background: rgb(75,75,75);
+	border-radius: 10%;
+	cursor: pointer;
+	transition: transform 0.25s ease-in, background 0.25s ease-in;
+	box-shadow: 0px 0px 10px rgb(20,20,20);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content:center;
+	font-weight:400;
+}
+
+.boxcontent {
+	font-weight:600;
+	font-size: 7rem;
+	margin: auto;
+	transition: color 0.25s;
+}
+
+.box:hover {
+	background: rgb(100,100,100);
+	transform: scale(110%);
+}
+
+.x {
+	cursor: not-allowed;
+}
+.o {
+	cursor: not-allowed;
+}
+
+.x:hover {
+	color: rgb(100,255,100);
+	cursor: not-allowed;
+}
+.o:hover {
+	color: rgb(255,100,100);
+	cursor: not-allowed;
+}
+
+/*End of Grid*/
+
+/*Created by TinsellyCone*/
