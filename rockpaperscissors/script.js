@@ -11,7 +11,7 @@ function buttonpress (buttonnum) {
     else if(buttonnum == 1) {
         button = "rock";
     }
-    if (random == buttonnum) {
+    if (random > 1.5) {
         alert("You Win!");
         location.reload();
     }
