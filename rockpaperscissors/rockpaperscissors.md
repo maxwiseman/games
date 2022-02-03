@@ -1,4 +1,4 @@
-Rock, Paper, Scissors
+# Rock, Paper, Scissors
 
 In Rock, Paper, Scissors players must choose either rock, paper, or scissors each round.
 Their decision decides whether they win or lose. Each item beats another item.

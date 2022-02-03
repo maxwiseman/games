@@ -1,0 +1,74 @@
+body {
+	background-color: rgb(50,50,50);
+	font-family: "Montserrat";
+	color: #efefef;
+}
+h1 {
+	font-weight: 900;
+}
+#allflex {
+	display:flex;
+	align-items: center;
+	align-content: center;
+	justify-content: center;
+}
+#heading {
+	font-size: 1.3rem;
+}
+
+.circle {
+	border-radius: 50%;
+	background-color: rgb(75,75,75);
+	width: 25%;
+	aspect-ratio: 1;
+	text-align: center;
+	transform: translateX(-50%);
+	transition: transform ease-in 0.25s, background-color ease-in 0.25s;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.circlehover {
+	width: 100%;
+	aspect-ratio: 1;
+	border-radius: 50%;
+	transition: transform ease-in 0.25s, background-color ease-in 0.25s;
+}
+.circlehover:hover {
+	transform: scale(1.2);
+	background-color: rgbA(100,100,100,25%);
+}
+
+#rock {
+	position:fixed;
+	bottom:15%;
+	left: 50%;
+	
+}
+#rockpng {
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+}
+#paper {
+	position:fixed;
+	top:15%;
+	left:20%;
+	transform: translateX(-50%);
+}
+#paperpng {
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+}
+#scissors {
+	position:fixed;
+	top:15%;
+	right:20%;
+	transform: translateX(50%);
+}
+#scissorspng {
+	position:relative;
+	top:50%;
+	transform: translateY(-50%);
+}
