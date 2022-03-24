@@ -1,0 +1,52 @@
+<head>
+<script src="script.js" defer></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<link rel="icon" type="image/x-icon" href="/favicon.ico">
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,900&display=swap" rel="stylesheet">
+<title></title>
+</head>
+
+<body>
+	<div class="centerallflexbox">
+	
+		<div id="titleflexcontainer">
+			<div id="titlediv">
+				<h1>Wordle</h1>
+				<div id="streak">Streak: 0</div>
+			</div>
+		</div>
+		
+		<div id="boardflex">
+			<input id="box1,1" class="box" onchange="typed(1)">
+			<input id="box1,2" class="box" onchange="typed(2)">
+			<input id="box1,3" class="box" onchange="typed(3)">
+			<input id="box1,4" class="box" onchange="typed(4)">
+			<input id="box1,5" class="box" onchange="typed(5)">
+			<input id="box2,1" class="box" onchange="typed(1)">
+			<input id="box2,2" class="box" onchange="typed(2)">
+			<input id="box2,3" class="box" onchange="typed(3)">
+			<input id="box2,4" class="box" onchange="typed(4)">
+			<input id="box2,5" class="box" onchange="typed(5)">
+			<input id="box3,1" class="box" onchange="typed(1)">
+			<input id="box3,2" class="box" onchange="typed(2)">
+			<input id="box3,3" class="box" onchange="typed(3)">
+			<input id="box3,4" class="box" onchange="typed(4)">
+			<input id="box3,5" class="box" onchange="typed(5)">
+			<input id="box4,1" class="box" onchange="typed(1)">
+			<input id="box4,2" class="box" onchange="typed(2)">
+			<input id="box4,3" class="box" onchange="typed(3)">
+			<input id="box4,4" class="box" onchange="typed(4)">
+			<input id="box4,5" class="box" onchange="typed(5)">
+			<input id="box5,1" class="box" onchange="typed(1)">
+			<input id="box5,2" class="box" onchange="typed(2)">
+			<input id="box5,3" class="box" onchange="typed(3)">
+			<input id="box5,4" class="box" onchange="typed(4)">
+			<input id="box5,5" class="box" onchange="typed(5)">
+			<div onclick="enter()" class="button">Submit</div>
+		</div>
+		<!--<div id="debug" class="box" onclick="debug()"></div>-->
+	</div>
+<body>
