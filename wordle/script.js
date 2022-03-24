@@ -51,13 +51,13 @@ function enter() {
 			let streak = localStorage.getItem("streak");
 			localStorage.setItem("streak", (parseInt(streak) + 1));
 			document.getElementById("streak").textContent = "Streak: " + localStorage.getItem("streak");
-			window.setTimeout(document.location.reload(),5000);
+			setTimeout(() => { document.location.reload(); }, 5000);
 			submitted = true;
 		}
 		else if (correctamount == 5) {
 			localStorage.setItem("streak", 1);
 			document.getElementById("streak").textContent = "Streak: " + localStorage.getItem("streak");
-			window.setTimeout(document.location.reload(),5000);
+			setTimeout(() => { document.location.reload(); }, 5000);
 			submitted = true;
 		}
 		else if (row == 5) {
