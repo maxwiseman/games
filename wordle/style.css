@@ -1,0 +1,131 @@
+body {
+	font-family: "Montserrat";
+	background: rgb(50,50,50);
+	color: #efefef;
+	font-weight: 400;
+}
+
+h1 {
+	font-size: 5rem;
+	font-weight: 800;
+}
+
+.button {
+	margin: auto;
+	margin-top: 50px;
+	font-weight: 600;
+	font-size: 1rem;
+	background: rgb(75,75,75);
+	position: relative;
+	top: -40;
+	box-shadow: 0px 0px 10px rgb(20,20,20);
+	padding: 20;
+	border-radius: 10%;
+	cursor: pointer;
+	transition: transform 0.25s ease-in, background 0.25s ease-in;
+}
+.button:hover {
+	transform: scale(110%);
+	background-color: rgb(100,100,100);
+}
+
+.centerallflexbox {
+	display: flex;
+	margin: 0;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+}
+
+#titleflexcontainer {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+#titlediv {
+	margin: auto;
+}
+
+/*End of "Header"*/
+
+#boardflex {
+	display: flex;
+	gap: 20px;
+	position: relative;
+	top: 0;
+	margin: auto;
+	justify-content: center;
+	align-items: stretch;
+	flex-wrap: wrap;
+	min-width: 850;
+	max-width: 900;
+	font-weight: 400;
+}
+
+.box {
+	width: 150px;
+	border: 0px;
+	aspect-ratio: 1;
+	background: rgb(75,75,75);
+	border-radius: 10%;
+	cursor: text;
+	transition: transform 0.25s ease-in, background 0.25s ease-in;
+	box-shadow: 0px 0px 10px rgb(20,20,20);
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	align-content:center;
+	font-weight:400;
+	text-align: center;
+	transition: 0.25s ease-in;
+	font-weight:600;
+	font-size: 8rem;
+	color: #efefef;
+}
+
+.box:hover {
+	background: rgb(100,100,100);
+	transform: scale(110%);
+}
+
+.box:disabled {
+	cursor:default;
+}
+
+.red {
+	color: rgb(255,75,75);
+}
+.red:hover {
+	background-color: rgb(255,75,75);
+	color: rgb(255,150,150);
+}
+.yellow {
+	color: rgb(245, 233, 66);
+}
+.yellow:hover {
+	background-color: rgb(200,200,0);
+	color: rgb(250,250,100);
+}
+.green {
+	color: rgb(75,255,75);
+}
+.green:hover {
+	background-color: rgb(45,235,45);
+	color: rgb(150,255,150);
+}
+
+#streak {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin: 0;
+	position: relative;
+	top: -35;
+	text-align: center;
+}
+
+/*End of Grid*/
+
+/*Created by TinsellyCone*/
