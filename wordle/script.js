@@ -8,6 +8,7 @@ let input = ["","","","",""];
 let correctamount = 0;
 let currentelement;
 let position = 0;
+start();
 document.getElementById("streak").textContent = "Streak: " + localStorage.getItem("streak");
 chooseword();
 /*let debug = document.getElementById("debug");*/
@@ -74,6 +75,17 @@ function chooseword() {
 	correct[2] = words[randomword].charAt(2).toUpperCase();
 	correct[3] = words[randomword].charAt(3).toUpperCase();
 	correct[4] = words[randomword].charAt(4).toUpperCase();
+}
+function start() {
+	do {
+		elements[0].value = "";
+		elements[1].value = "";
+		elements[2].value = "";
+		elements[3].value = "";
+		elements[4].value = "";
+		row++;
+	} while (row < 5);
+	row = 1;
 }
 
 //Created by TinsellyCone
