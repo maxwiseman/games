@@ -1,60 +1,30 @@
 <head>
-<script src="script.js" defer></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
-<link rel="manifest" href="/site.webmanifest">
-<link rel="mask-icon" href="/safari-pinned-tab.svg" color="#000000">
-<meta name="msapplication-TileColor" content="#00aba9">
-<meta name="theme-color" content="#e5e5e5">
-
-<link rel="stylesheet" href="style.css">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,900&display=swap" rel="stylesheet">
-<title>Wordle</title>
+    <script src="script.js" defer></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,600;0,800;1,900&display=swap" rel="stylesheet">
+    <title></title>
 </head>
+    
+<body onload="onLoad()">
+    <div class="centerallflexbox">
+        
+        <div id="titleflexcontainer">
+            <div id="titlediv">
+                <h1 id="title">Wordle</h1>
+                <div id="streak">Streak: 0</div>
+            </div>
+        </div>
 
-<body>
-	<div class="centerallflexbox">
-	
-		<div id="titleflexcontainer">
-			<div id="titlediv">
-				<h1>Wordle</h1>
-				<div id="streak">Streak: 0</div>
-			</div>
-		</div>
-		
-		<div id="boardflex">
-			<input id="box1,1" class="box" onchange="typed(1)">
-			<input id="box1,2" class="box" onchange="typed(2)">
-			<input id="box1,3" class="box" onchange="typed(3)">
-			<input id="box1,4" class="box" onchange="typed(4)">
-			<input id="box1,5" class="box" onchange="typed(5)">
-			<input id="box2,1" class="box" onchange="typed(1)">
-			<input id="box2,2" class="box" onchange="typed(2)">
-			<input id="box2,3" class="box" onchange="typed(3)">
-			<input id="box2,4" class="box" onchange="typed(4)">
-			<input id="box2,5" class="box" onchange="typed(5)">
-			<input id="box3,1" class="box" onchange="typed(1)">
-			<input id="box3,2" class="box" onchange="typed(2)">
-			<input id="box3,3" class="box" onchange="typed(3)">
-			<input id="box3,4" class="box" onchange="typed(4)">
-			<input id="box3,5" class="box" onchange="typed(5)">
-			<input id="box4,1" class="box" onchange="typed(1)">
-			<input id="box4,2" class="box" onchange="typed(2)">
-			<input id="box4,3" class="box" onchange="typed(3)">
-			<input id="box4,4" class="box" onchange="typed(4)">
-			<input id="box4,5" class="box" onchange="typed(5)">
-			<input id="box5,1" class="box" onchange="typed(1)">
-			<input id="box5,2" class="box" onchange="typed(2)">
-			<input id="box5,3" class="box" onchange="typed(3)">
-			<input id="box5,4" class="box" onchange="typed(4)">
-			<input id="box5,5" class="box" onchange="typed(5)">
-			<div onclick="enter()" class="button">Submit</div>
-		</div>
-		<!--<div id="debug" class="box" onclick="debug()"></div>-->
+        <div id="boardflex">
+
+        </div>
+
+    </div>
+	<div id="correct"></div>
+		<!-- <div id="debug" class="box" onclick="debug()"></div> -->
 	</div>
 <body>
